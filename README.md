@@ -1,2 +1,36 @@
-# padawan-banco-de-dados-01
-Repositório criado para aplicação prática dos conceitos do curso "SQL com MySQL: manipule e consulte dados" da linha de estudos "03-Banco de Dados" do plano de estudos "Desenvolvedor Padawan".
+-- Criação do banco de dados SUCOS
+CREATE DATABASE SUCOS;
+
+-- Criação da tabela tbCliente
+CREATE TABLE IF NOT EXISTS tbCliente (
+    CPF VARCHAR(11),
+    NOME VARCHAR(100),
+    ENDERECO1 VARCHAR(150),
+    ENDERECO2 VARCHAR(150),
+    BAIRRO VARCHAR(50),
+    CIDADE VARCHAR(50),
+    ESTADO VARCHAR(50),
+    CEP VARCHAR(8),
+    IDADE SMALLINT,
+    SEXO VARCHAR(1),
+    LIMITE_CREDITO FLOAT,
+    VOLUME_COMPRA FLOAT,
+    PRIMEIRA_COMPRA BIT(1)
+);
+
+-- Desafio passado na aula 03: Criação da tabela TABELA_DE_VENDEDORES
+CREATE TABLE IF NOT EXISTS TABELA_DE_VENDEDORES (
+    MATRICULA VARCHAR(5),
+    NOME VARCHAR(100),
+    PERCENTUAL_COMISSAO FLOAT
+);
+
+-- Criação da tabela tbProduto
+CREATE TABLE IF NOT EXISTS tbProduto (
+    PRODUTO VARCHAR(20),
+    NOME VARCHAR(150),
+    EMBALAGEM VARCHAR(50),
+    TAMANHO VARCHAR(50),
+    SABOR VARCHAR(50),
+    PRECO_LISTA FLOAT
+);
