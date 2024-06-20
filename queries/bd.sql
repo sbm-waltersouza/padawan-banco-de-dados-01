@@ -106,4 +106,16 @@ WHERE PRODUTO = '544931';
 UPDATE tbproduto SET EMBALAGEM = 'Garrafa'
 WHERE PRODUTO = '1078680';
 
+-- DESAFIO APOS A AULA
+UPDATE tabela_de_vendedores SET PERCENTUAL_COMISSAO = 0.11
+WHERE MATRICULA = '00236';
+
+UPDATE tabela_de_vendedores SET NOME = 'José Geraldo da Fonseca Junior'
+WHERE MATRICULA = '00233';
+
+DELETE FROM tbproduto WHERE PRODUTO = '1078680';
+
+ -- DESAFIO AULA
+ DELETE FROM tabela_de_vendedores WHERE MATRICULA = '00236';
+
 SELECT * FROM tbproduto;
